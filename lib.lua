@@ -1,4 +1,4 @@
-repeat task.wait until game:IsLoaded()
+repeat task.wait() until game:IsLoaded()
 print("yixiyohub lib loaded)
 
 local workspace = game.Workspace or game:GetService("Workspace")
