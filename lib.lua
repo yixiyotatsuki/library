@@ -4,4 +4,4 @@ local lplr = game:GetService("Players").LocalPlayer or game.Players.LocalPlayer
 local gui = Instance.new("ScreenGui", lplr.PlayerGui)
 gui.ResetOnSpawn = false
 local owner = "umother2001vjd"
-print("executor: ", executor)
+local mouse = lplr:GetMouse()
