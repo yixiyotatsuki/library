@@ -6,6 +6,9 @@ gui.ResetOnSpawn = false
 local owner = "umother2001vjd"
 local mouse = lplr:GetMouse()
 
-if mouse == nil then
-  warn("1 of the functions not work, not recommend executor.")
+local function PlaySound(soundId)
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://", soundId
+    sound:Load()
+    sound:Play()
 end
