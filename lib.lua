@@ -1,3 +1,6 @@
+repeat task.wait until game:IsLoaded()
+print("yixiyohub lib loaded)
+
 local workspace = game.Workspace or game:GetService("Workspace")
 local executor = identifyexecutor and identifyexecutor() or getexecutorname and getexecutorname()
 local lplr = game:GetService("Players").LocalPlayer or game.Players.LocalPlayer
