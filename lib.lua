@@ -5,3 +5,7 @@ local gui = Instance.new("ScreenGui", lplr.PlayerGui)
 gui.ResetOnSpawn = false
 local owner = "umother2001vjd"
 local mouse = lplr:GetMouse()
+
+if mouse == nil then
+  warn("1 of the functions not work, not recommend executor.")
+end
