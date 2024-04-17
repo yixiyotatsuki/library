@@ -6,9 +6,11 @@ gui.ResetOnSpawn = false
 local owner = "umother2001vjd"
 local mouse = lplr:GetMouse()
 
-local function PlaySound(soundId)
-    local sound = Instance.new("Sound")
-    sound.SoundId = "rbxassetid://", soundId
-    sound:Load()
-    sound:Play()
+local function SendNotify(title, text, duration)
+    local StarterGui = game:GetService("StarterGui")
+    StarterGui:SetCore("SendNotification", {
+        Title = title,
+        Text = text,
+        Duration = duration or 2,
+    })
 end
