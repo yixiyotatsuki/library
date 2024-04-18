@@ -1,5 +1,4 @@
 repeat task.wait() until game:IsLoaded()
-print("yixiyohub lib loaded)
 
 local workspace = game.Workspace or game:GetService("Workspace")
 local executor = identifyexecutor and identifyexecutor() or getexecutorname and getexecutorname()
@@ -17,3 +16,7 @@ local function SendNotify(title, text, duration)
         Duration = duration or 2,
     })
 end
+
+--unsupported
+if executor == "Evon" or "Evon Android" then
+    
